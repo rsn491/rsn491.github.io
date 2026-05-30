@@ -43,7 +43,9 @@ permalink: /projects/
   </div>
 
   <div style="display: flex; flex-wrap: wrap; gap: 24px; border: 1px solid #e8e8e8; border-radius: 6px; padding: 20px; align-items: flex-start;">
-    <img src="https://github.com/rsn491/koopera/raw/master/docs/pr_notebook_diff.png" alt="Koopera notebook diff" style="width: 260px; flex-shrink: 0; border-radius: 4px; border: 1px solid #e8e8e8;">
+    <div style="width: 260px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; background: #f9f9f9; border-radius: 4px; border: 1px solid #e8e8e8; min-height: 120px;">
+      <img src="https://github.com/rsn491/koopera/raw/master/public/img/icon.png" alt="Koopera logo" style="width: 80px;">
+    </div>
     <div style="flex: 1; min-width: 200px;">
       <div style="display: flex; justify-content: space-between; align-items: baseline;">
         <b>Koopera</b>
