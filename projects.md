@@ -58,6 +58,7 @@ permalink: /projects/
         <span class="cv-badge"><img class="cv-badge-icon" src="https://cdn.simpleicons.org/python/3c5a8a" alt="" aria-hidden="true" onerror="this.style.display='none'">Python</span>
         <span class="cv-badge"><img class="cv-badge-icon" src="https://cdn.simpleicons.org/javascript/3c5a8a" alt="" aria-hidden="true" onerror="this.style.display='none'">JavaScript</span>
         <span class="cv-badge"><img class="cv-badge-icon" src="https://cdn.simpleicons.org/flask/3c5a8a" alt="" aria-hidden="true" onerror="this.style.display='none'">Flask</span>
+        <span class="cv-badge"><img class="cv-badge-icon" src="https://cdn.simpleicons.org/vuedotjs/3c5a8a" alt="" aria-hidden="true" onerror="this.style.display='none'">Vue.js</span>
       </div>
       <a href="https://github.com/rsn491/koopera" style="font-size: 0.85em; color: #828282; text-decoration: none; display: inline-flex; align-items: center; gap: 4px;"><img src="https://cdn.simpleicons.org/github/828282" style="width: 13px; height: 13px;" alt="" aria-hidden="true">GitHub →</a>
     </div>
