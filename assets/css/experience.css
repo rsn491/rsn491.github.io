@@ -107,7 +107,9 @@
 }
 
 .cv-badge {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
   padding: 0.18rem 0.5rem;
   font-size: 0.73rem;
   font-weight: 500;
@@ -117,6 +119,16 @@
   border-radius: 3px;
   white-space: nowrap;
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+}
+
+.cv-badge-icon {
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+}
+
+.cv-badge-icon-filtered {
+  filter: brightness(0) saturate(100%) invert(27%) sepia(40%) saturate(611%) hue-rotate(192deg) brightness(95%);
 }
 
 @media (max-width: 480px) {
