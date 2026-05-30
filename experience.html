@@ -1,0 +1,249 @@
+---
+layout: page
+title: Experience
+permalink: /experience/
+---
+
+<link rel="stylesheet" href="{{ '/assets/css/experience.css' | relative_url }}">
+
+<div class="cv-tldr">
+  10 years building high-performance distributed systems. Currently at Adyen, scaling the core payments ledger to 160k+ transactions per minute. Previously Klue's first Amsterdam hire and one of the first engineers at Defined.ai (7 &rarr; 150 people).
+</div>
+
+<div class="cv-slider-section">
+  <div class="cv-slider-label">
+    <span>Roles active in: <strong id="slider-year-display">2026 (present)</strong></span>
+    <button class="cv-slider-reset" id="slider-reset">Show all</button>
+  </div>
+  <input type="range" id="year-slider" min="2015" max="2026" value="2026" step="1">
+  <div class="cv-slider-ticks">
+    <span>2015</span><span>2016</span><span>2017</span><span>2018</span>
+    <span>2019</span><span>2020</span><span>2021</span><span>2022</span>
+    <span>2023</span><span>2024</span><span>2025</span><span>2026</span>
+  </div>
+</div>
+
+<div class="cv-timeline">
+
+  <!-- Adyen: Staff Software Engineer -->
+  <div class="cv-entry" data-start="2021" data-end="2026">
+    <span class="cv-node"></span>
+    <div class="cv-entry-header">
+      <img class="cv-company-logo"
+           src="https://logo.clearbit.com/adyen.com"
+           alt="Adyen"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+      <span class="cv-logo-fallback">AD</span>
+      <span class="cv-title">Staff Software Engineer</span>
+      <span class="cv-company">· Adyen</span>
+    </div>
+    <div class="cv-dates">Sep 2021 &ndash; Present <span class="cv-duration">(~4 yrs)</span></div>
+    <p class="cv-description">
+      Leading the scaling of Adyen's core payment ledger — the authoritative system that processes, stores, and serves all transactional and accounting data across the global network, handling 160k+ transactions per minute as of 2024. Work spans hardening distributed locking against DB outages, building migration tooling for queue-like operations later adopted org-wide, co-leading the internal MyBatis framework for real-time connection tuning and query observability, supporting datacenter rollouts through controlled experiments, and authoring the first integration guide for the ledger with CI and ownership guardrails to prevent misuse.
+    </p>
+    <div class="cv-badges">
+      <span class="cv-badge">Java</span>
+      <span class="cv-badge">Postgres</span>
+      <span class="cv-badge">MyBatis</span>
+      <span class="cv-badge">HikariCP</span>
+      <span class="cv-badge">Prometheus</span>
+      <span class="cv-badge">ELK</span>
+      <span class="cv-badge">Nomad</span>
+    </div>
+  </div>
+
+  <!-- Adyen: Software Engineer -->
+  <div class="cv-entry" data-start="2020" data-end="2021">
+    <span class="cv-node"></span>
+    <div class="cv-entry-header">
+      <img class="cv-company-logo"
+           src="https://logo.clearbit.com/adyen.com"
+           alt="Adyen"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+      <span class="cv-logo-fallback">AD</span>
+      <span class="cv-title">Software Engineer</span>
+      <span class="cv-company">· Adyen</span>
+    </div>
+    <div class="cv-dates">Apr 2020 &ndash; Sep 2021 <span class="cv-duration">(1 yr 5 mos)</span></div>
+    <p class="cv-description">
+      Backend engineer on the In-Person Payments Platform team, building a multi-region WebSocket platform enabling real-time interactions between payment terminals and backend services for both payment processing and fleet management. Grew the platform from thousands to hundreds of thousands of connected devices while maintaining strict low-latency and high-availability targets. Designed a stress-test suite that surfaced scaling bottlenecks ahead of forecasted growth, and created a dev environment that accelerated terminal firmware integration and compliance certification.
+    </p>
+    <div class="cv-badges">
+      <span class="cv-badge">Java</span>
+      <span class="cv-badge">PostgreSQL</span>
+      <span class="cv-badge">MyBatis</span>
+      <span class="cv-badge">Apache HTTP Server</span>
+    </div>
+  </div>
+
+  <!-- Klue: Software Engineer -->
+  <div class="cv-entry" data-start="2019" data-end="2020">
+    <span class="cv-node"></span>
+    <div class="cv-entry-header">
+      <img class="cv-company-logo"
+           src="https://logo.clearbit.com/klue.com"
+           alt="Klue"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+      <span class="cv-logo-fallback">KL</span>
+      <span class="cv-title">Software Engineer</span>
+      <span class="cv-company">· Klue</span>
+    </div>
+    <div class="cv-dates">Aug 2019 &ndash; Apr 2020 <span class="cv-duration">(9 mos)</span></div>
+    <p class="cv-description">
+      Klue's first hire in Amsterdam, helping establish the company's European Machine Learning office from the ground up. Built a nearest-neighbors deduplication API processing 1M+ documents per day and a pipeline for ingesting and processing product reviews at scale. Contributed to platform security and compliance through rate limiting, user permissions, and JavaScript Subresource Integrity (SRI) as part of ASVS compliance. Also participated in hiring and set up CI/CD for Python microservices.
+    </p>
+    <div class="cv-badges">
+      <span class="cv-badge">Python</span>
+      <span class="cv-badge">Flask</span>
+      <span class="cv-badge">Redis</span>
+      <span class="cv-badge">Ruby</span>
+      <span class="cv-badge">Rails</span>
+      <span class="cv-badge">ElasticSearch</span>
+      <span class="cv-badge">Docker</span>
+      <span class="cv-badge">Kubernetes</span>
+    </div>
+  </div>
+
+  <!-- Defined.ai: Lead Software Engineer -->
+  <div class="cv-entry" data-start="2019" data-end="2019">
+    <span class="cv-node"></span>
+    <div class="cv-entry-header">
+      <img class="cv-company-logo"
+           src="https://logo.clearbit.com/defined.ai"
+           alt="Defined.ai"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+      <span class="cv-logo-fallback">DA</span>
+      <span class="cv-title">Lead Software Engineer</span>
+      <span class="cv-company">· Defined.ai</span>
+    </div>
+    <div class="cv-dates">Jan 2019 &ndash; Jul 2019 <span class="cv-duration">(7 mos)</span></div>
+    <p class="cv-description">
+      Led the engineering side of Data Infrastructure and Machine Learning, overseeing real-time and batch quality assessment pipelines handling 1M+ crowdsourcing tasks per day on Azure. Designed an end-to-end data flow from ingestion to reporting across a distributed stack, and built internal frameworks to shorten the path from research prototypes to production systems.
+    </p>
+    <div class="cv-badges">
+      <span class="cv-badge">Python</span>
+      <span class="cv-badge">C#</span>
+      <span class="cv-badge">Azure Service Bus</span>
+      <span class="cv-badge">Redis</span>
+      <span class="cv-badge">Cosmos DB</span>
+      <span class="cv-badge">Hive</span>
+      <span class="cv-badge">Spark</span>
+      <span class="cv-badge">Azure Data Lake</span>
+    </div>
+  </div>
+
+  <!-- Defined.ai: Software Engineer -->
+  <div class="cv-entry" data-start="2016" data-end="2018">
+    <span class="cv-node"></span>
+    <div class="cv-entry-header">
+      <img class="cv-company-logo"
+           src="https://logo.clearbit.com/defined.ai"
+           alt="Defined.ai"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+      <span class="cv-logo-fallback">DA</span>
+      <span class="cv-title">Software Engineer</span>
+      <span class="cv-company">· Defined.ai</span>
+    </div>
+    <div class="cv-dates">Sep 2016 &ndash; Dec 2018 <span class="cv-duration">(2 yrs 3 mos)</span></div>
+    <p class="cv-description">
+      One of the first engineers at Defined.ai (then DefinedCrowd), contributing through the company's growth from 7 to over 150 employees. Worked across the full stack: built the SaaS catalog and pricing backend, helped migrate a monolith to microservices, developed a React and Redux web app deployed in 56+ countries with full localization, shipped iOS and Android audio data collection apps with offline support and internationalization, and set up CI/CD pipelines for ML APIs and event-driven services.
+    </p>
+    <div class="cv-badges">
+      <span class="cv-badge">C#</span>
+      <span class="cv-badge">ASP.NET</span>
+      <span class="cv-badge">SQL Server</span>
+      <span class="cv-badge">React</span>
+      <span class="cv-badge">Redux</span>
+      <span class="cv-badge">Swift</span>
+      <span class="cv-badge">Java</span>
+      <span class="cv-badge">React Native</span>
+      <span class="cv-badge">TensorFlow</span>
+      <span class="cv-badge">Docker</span>
+      <span class="cv-badge">Kubernetes</span>
+    </div>
+  </div>
+
+  <!-- everis: Software Consultant -->
+  <div class="cv-entry" data-start="2015" data-end="2016">
+    <span class="cv-node"></span>
+    <div class="cv-entry-header">
+      <img class="cv-company-logo"
+           src="https://logo.clearbit.com/everis.com"
+           alt="everis"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+      <span class="cv-logo-fallback">EV</span>
+      <span class="cv-title">Software Consultant</span>
+      <span class="cv-company">· everis</span>
+    </div>
+    <div class="cv-dates">Oct 2015 &ndash; Aug 2016 <span class="cv-duration">(10 mos)</span></div>
+    <p class="cv-description">
+      Worked in the banking and insurance sectors building enterprise Java applications. Improved the performance of a daily financial reporting pipeline for a capital markets platform and built the integration between client-facing systems and a centralized Identity Access Management solution using Active Directory.
+    </p>
+    <div class="cv-badges">
+      <span class="cv-badge">Java</span>
+      <span class="cv-badge">MySQL</span>
+      <span class="cv-badge">JBoss</span>
+      <span class="cv-badge">Active Directory</span>
+      <span class="cv-badge">CA Identity Suite</span>
+    </div>
+  </div>
+
+  <!-- INESC-ID: FCT Research Scholarship -->
+  <div class="cv-entry" data-start="2015" data-end="2015">
+    <span class="cv-node"></span>
+    <div class="cv-entry-header">
+      <img class="cv-company-logo"
+           src="https://logo.clearbit.com/inesc-id.pt"
+           alt="INESC-ID"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+      <span class="cv-logo-fallback">IN</span>
+      <span class="cv-title">FCT Research Scholarship</span>
+      <span class="cv-company">· INESC-ID</span>
+    </div>
+    <div class="cv-dates">Jan 2015 &ndash; Sep 2015 <span class="cv-duration">(9 mos)</span></div>
+    <p class="cv-description">
+      Scientific initiation scholarship at INESC-ID for the Green-TM project, at the intersection of Parallel Computing, Autonomic Systems, and Machine Learning. Researched and implemented the first energy-efficient Transactional Memory system using self-tuning techniques steered by machine learning, leading to an academic publication on ProteusTM.
+    </p>
+    <div class="cv-badges">
+      <span class="cv-badge">C</span>
+      <span class="cv-badge">C++</span>
+      <span class="cv-badge">Java</span>
+      <span class="cv-badge">Weka</span>
+    </div>
+  </div>
+
+</div>
+
+<script>
+(function () {
+  var slider = document.getElementById('year-slider');
+  var display = document.getElementById('slider-year-display');
+  var resetBtn = document.getElementById('slider-reset');
+  var entries = document.querySelectorAll('.cv-entry');
+
+  function filterByYear(year) {
+    entries.forEach(function (entry) {
+      var start = parseInt(entry.getAttribute('data-start'), 10);
+      var end = parseInt(entry.getAttribute('data-end'), 10);
+      entry.classList.toggle('cv-dimmed', !(year >= start && year <= end));
+    });
+  }
+
+  function onSliderChange() {
+    var year = parseInt(slider.value, 10);
+    display.textContent = year === 2026 ? '2026 (present)' : String(year);
+    filterByYear(year);
+  }
+
+  slider.addEventListener('input', onSliderChange);
+  slider.addEventListener('change', onSliderChange);
+
+  resetBtn.addEventListener('click', function () {
+    slider.value = 2026;
+    display.textContent = '2026 (present)';
+    entries.forEach(function (e) { e.classList.remove('cv-dimmed'); });
+  });
+
+  onSliderChange();
+}());
+</script>
