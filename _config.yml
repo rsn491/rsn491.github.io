@@ -39,6 +39,7 @@ plugins:
 
 header_pages:
   - experience.html
+  - projects.md
 
 # Exclude from processing.
 # The following items will not be processed, by default.
