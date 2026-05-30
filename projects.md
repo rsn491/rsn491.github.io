@@ -18,7 +18,7 @@ permalink: /projects/
       <p style="margin: 8px 0 12px; font-size: 0.95em;">Isolated workspace manager for parallel agentic development — run multiple AI agents on the same repo, each in their own Git worktree.</p>
       <div style="display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px;">
         <span class="cv-badge"><img class="cv-badge-icon" src="https://cdn.simpleicons.org/rust/3c5a8a" alt="" aria-hidden="true" onerror="this.style.display='none'">Rust</span>
-        <span class="cv-badge">Ratatui</span>
+        <span class="cv-badge"><img class="cv-badge-icon" src="https://cdn.simpleicons.org/ratatui/3c5a8a" alt="" aria-hidden="true" onerror="this.style.display='none'">Ratatui</span>
       </div>
       <a href="https://github.com/rsn491/silo" style="font-size: 0.85em; color: #828282; text-decoration: none; display: inline-flex; align-items: center; gap: 4px;"><img src="https://cdn.simpleicons.org/github/828282" style="width: 13px; height: 13px;" alt="" aria-hidden="true">GitHub →</a>
     </div>
@@ -39,9 +39,10 @@ permalink: /projects/
         <span class="cv-badge"><img class="cv-badge-icon" src="https://cdn.simpleicons.org/nodedotjs/3c5a8a" alt="" aria-hidden="true" onerror="this.style.display='none'">Node.js</span>
         <span class="cv-badge">PeerJS</span>
       </div>
-      <a href="https://github.com/rsn491/chillout" style="font-size: 0.85em; color: #828282; text-decoration: none; display: inline-flex; align-items: center; gap: 4px;"><img src="https://cdn.simpleicons.org/github/828282" style="width: 13px; height: 13px;" alt="" aria-hidden="true">GitHub →</a>
-      &nbsp;&nbsp;
-      <a href="https://chillout.onrender.com/" style="font-size: 0.85em; color: #828282; text-decoration: none;">Demo →</a>
+      <div style="display: inline-flex; align-items: center; gap: 8px;">
+        <a href="https://github.com/rsn491/chillout" style="font-size: 0.85em; color: #828282; text-decoration: none; display: inline-flex; align-items: center; gap: 4px;"><img src="https://cdn.simpleicons.org/github/828282" style="width: 13px; height: 13px;" alt="" aria-hidden="true">GitHub →</a>
+        <a href="https://chillout.onrender.com/" style="font-size: 0.85em; color: #828282; text-decoration: none; display: inline-flex; align-items: center; gap: 4px;">Demo →</a>
+      </div>
     </div>
   </div>
 
