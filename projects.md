@@ -37,6 +37,8 @@ permalink: /projects/
         <span style="background: #f3f3f3; border-radius: 12px; padding: 2px 10px; font-size: 0.8em;">PeerJS</span>
       </div>
       <a href="https://github.com/rsn491/chillout" style="font-size: 0.85em; color: #828282; text-decoration: none;">GitHub →</a>
+      &nbsp;&nbsp;
+      <a href="https://chillout.onrender.com/" style="font-size: 0.85em; color: #828282; text-decoration: none;">Demo →</a>
     </div>
   </div>
 
