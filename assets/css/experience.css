@@ -8,20 +8,6 @@
   --badge-bg: #eef2f7;
   --badge-color: #3c5a8a;
   --badge-border: #c5d0e4;
-  --dimmed-opacity: 0.2;
-  --transition-speed: 0.3s;
-}
-
-/* TL;DR */
-.cv-tldr {
-  background: #f8f8f8;
-  border-left: 4px solid var(--node-color);
-  padding: 1rem 1.25rem;
-  margin-bottom: 2.5rem;
-  border-radius: 0 4px 4px 0;
-  font-size: 1rem;
-  line-height: 1.7;
-  color: #333;
 }
 
 
@@ -45,7 +31,6 @@
 .cv-entry {
   position: relative;
   margin-bottom: var(--entry-gap);
-  transition: opacity var(--transition-speed) ease;
 }
 
 
@@ -82,21 +67,6 @@
   border: 1px solid #e0e0e0;
 }
 
-.cv-logo-fallback {
-  width: 26px;
-  height: 26px;
-  border-radius: 4px;
-  background: var(--node-color);
-  color: #fff;
-  font-size: 0.6rem;
-  font-weight: 700;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
 
 .cv-title {
   font-weight: 700;
