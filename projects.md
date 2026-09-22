@@ -9,13 +9,47 @@ permalink: /projects/
 <div style="display: flex; flex-direction: column; gap: 20px;">
 
   <div style="display: flex; flex-wrap: wrap; gap: 24px; border: 1px solid #e8e8e8; border-radius: 6px; padding: 20px; align-items: flex-start;">
+    <img src="https://github.com/rsn491/lintmatter/raw/main/docs/img/scorecard.gif" alt="Lintmatter demo" style="width: 260px; flex-shrink: 0; border-radius: 4px; border: 1px solid #e8e8e8;">
+    <div style="flex: 1; min-width: 200px;">
+      <div style="display: flex; justify-content: space-between; align-items: baseline;">
+        <b>Lintmatter</b>
+        <span style="color: #828282; font-size: 0.85em;">2026</span>
+      </div>
+      <p style="margin: 8px 0 12px; font-size: 0.95em;">Linter for agent context files such as AGENTS.md and SKILL.md. Validates formatting, references, and token budgets.</p>
+      <div style="display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px;">
+        <span class="cv-badge"><img class="cv-badge-icon" src="https://cdn.simpleicons.org/rust/3c5a8a" alt="" aria-hidden="true" onerror="this.style.display='none'">Rust</span>
+      </div>
+      <div style="display: inline-flex; align-items: center; gap: 8px;">
+        <a href="https://github.com/rsn491/lintmatter" style="font-size: 0.85em; color: #828282; text-decoration: none; display: inline-flex; align-items: center; gap: 4px;"><img src="https://cdn.simpleicons.org/github/828282" style="width: 13px; height: 13px;" alt="" aria-hidden="true">GitHub →</a>
+        <a href="https://lintmatter.onrender.com/demo" style="font-size: 0.85em; color: #828282; text-decoration: none; display: inline-flex; align-items: center; gap: 4px;">Demo →</a>
+      </div>
+    </div>
+  </div>
+
+  <div style="display: flex; flex-wrap: wrap; gap: 24px; border: 1px solid #e8e8e8; border-radius: 6px; padding: 20px; align-items: flex-start;">
+    <img src="https://github.com/rsn491/tea/raw/main/docs/demo_output.png" alt="Tea demo output" style="width: 260px; flex-shrink: 0; border-radius: 4px; border: 1px solid #e8e8e8;">
+    <div style="flex: 1; min-width: 200px;">
+      <div style="display: flex; justify-content: space-between; align-items: baseline;">
+        <b>Tea</b>
+        <span style="color: #828282; font-size: 0.85em;">2026</span>
+      </div>
+      <p style="margin: 8px 0 12px; font-size: 0.95em;">Testing and evaluation tool for agentic workflows. Run agents against tasks, assert their behavior, and measure performance.</p>
+      <div style="display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px;">
+        <span class="cv-badge"><img class="cv-badge-icon" src="https://cdn.simpleicons.org/python/3c5a8a" alt="" aria-hidden="true" onerror="this.style.display='none'">Python</span>
+        <span class="cv-badge"><img class="cv-badge-icon" src="https://cdn.simpleicons.org/docker/3c5a8a" alt="" aria-hidden="true" onerror="this.style.display='none'">Docker</span>
+      </div>
+      <a href="https://github.com/rsn491/tea" style="font-size: 0.85em; color: #828282; text-decoration: none; display: inline-flex; align-items: center; gap: 4px;"><img src="https://cdn.simpleicons.org/github/828282" style="width: 13px; height: 13px;" alt="" aria-hidden="true">GitHub →</a>
+    </div>
+  </div>
+
+  <div style="display: flex; flex-wrap: wrap; gap: 24px; border: 1px solid #e8e8e8; border-radius: 6px; padding: 20px; align-items: flex-start;">
     <img src="https://github.com/rsn491/silo/raw/main/docs/silo_launch.gif" alt="Silo demo" style="width: 260px; flex-shrink: 0; border-radius: 4px; border: 1px solid #e8e8e8;">
     <div style="flex: 1; min-width: 200px;">
       <div style="display: flex; justify-content: space-between; align-items: baseline;">
         <b>Silo</b>
         <span style="color: #828282; font-size: 0.85em;">2026</span>
       </div>
-      <p style="margin: 8px 0 12px; font-size: 0.95em;">Isolated workspace manager for parallel agentic development — run multiple AI agents on the same repo, each in their own Git worktree.</p>
+      <p style="margin: 8px 0 12px; font-size: 0.95em;">Isolated workspace manager for parallel agentic development. Run multiple AI agents on the same repo, each in their own Git worktree.</p>
       <div style="display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px;">
         <span class="cv-badge"><img class="cv-badge-icon" src="https://cdn.simpleicons.org/rust/3c5a8a" alt="" aria-hidden="true" onerror="this.style.display='none'">Rust</span>
         <span class="cv-badge"><img class="cv-badge-icon" src="https://cdn.simpleicons.org/ratatui/3c5a8a" alt="" aria-hidden="true" onerror="this.style.display='none'">Ratatui</span>
@@ -33,7 +67,7 @@ permalink: /projects/
         <b>Chillout</b>
         <span style="color: #828282; font-size: 0.85em;">2020</span>
       </div>
-      <p style="margin: 8px 0 12px; font-size: 0.95em;">P2P video chat app for hanging out with friends — includes trivia games and YouTube sharing with no central server dependency.</p>
+      <p style="margin: 8px 0 12px; font-size: 0.95em;">P2P video chat app for hanging out with friends. Includes trivia games and YouTube sharing with no central server dependency.</p>
       <div style="display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px;">
         <span class="cv-badge"><img class="cv-badge-icon" src="https://cdn.simpleicons.org/vuedotjs/3c5a8a" alt="" aria-hidden="true" onerror="this.style.display='none'">Vue.js</span>
         <span class="cv-badge"><img class="cv-badge-icon" src="https://cdn.simpleicons.org/nodedotjs/3c5a8a" alt="" aria-hidden="true" onerror="this.style.display='none'">Node.js</span>
@@ -55,7 +89,7 @@ permalink: /projects/
         <b>Koopera</b>
         <span style="color: #828282; font-size: 0.85em;">2019</span>
       </div>
-      <p style="margin: 8px 0 12px; font-size: 0.95em;">Collaboration platform for data science teams to share and review Jupyter notebooks — supports diffs and cell-level comments.</p>
+      <p style="margin: 8px 0 12px; font-size: 0.95em;">Collaboration platform for data science teams to share and review Jupyter notebooks. Supports diffs and cell-level comments.</p>
       <div style="display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px;">
         <span class="cv-badge"><img class="cv-badge-icon" src="https://cdn.simpleicons.org/python/3c5a8a" alt="" aria-hidden="true" onerror="this.style.display='none'">Python</span>
 
