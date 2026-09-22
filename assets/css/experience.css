@@ -1,5 +1,23 @@
 .post-title { display: none; }
 
+.cv-download-button {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  padding: 0.6rem 1rem;
+  border-radius: 4px;
+  background: #2a7ae2;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.cv-download-button:hover,
+.cv-download-button:focus-visible {
+  background: #1756a9;
+  color: #fff;
+  text-decoration: none;
+}
+
 :root {
   --timeline-line-color: #ddd;
   --node-color: #2a7ae2;
