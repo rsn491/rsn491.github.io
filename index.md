@@ -1,6 +1,10 @@
 ---
 layout: home
+title: Ricardo Neves - Staff Software Engineer
+description: Staff Software Engineer with 10+ years building scalable, resilient systems. Specializing in payment systems and distributed backend engineering.
 ---
+
+{% include head-custom.html %}
 
 <div style="overflow: hidden;">
   <img src="/assets/profile.jpeg" alt="Profile Picture" style="border-radius: 50%; width: 33%; object-fit: cover; margin-right: 33px; margin-bottom: 16px; float: left;">
