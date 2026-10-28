@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://rsn491.github.io/sitemap.xml
+Sitemap: https://ricardosn.com/sitemap.xml

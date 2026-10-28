@@ -19,12 +19,11 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Ricardo Neves
-email: ricardo@rsn491.com
 description: >-
   Staff Software Engineer with 10+ years of experience building scalable, resilient, and high-performance systems.
   Specializing in payment systems, distributed systems, and backend engineering.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://rsn491.github.io" # the base hostname & protocol for your site
+url: "https://ricardosn.com" # the base hostname & protocol for your site
 twitter_username: ricardosn8
 github_username:  rsn491
 linkedin_username: ricardo-neves-61656597
@@ -38,9 +37,20 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
-# SEO settings
-author: Ricardo Neves
+# SEO (consumed by jekyll-seo-tag: og/twitter tags and Person JSON-LD)
+author:
+  name: Ricardo Neves
+  twitter: ricardosn8
+twitter:
+  username: ricardosn8
+  card: summary_large_image
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/profile.jpeg
 social:
+  type: Person
   name: Ricardo Neves
   links:
     - https://twitter.com/ricardosn8
@@ -48,19 +58,9 @@ social:
     - https://linkedin.com/in/ricardo-neves-61656597
     - https://medium.com/@rsn491
 
-# Open Graph / Twitter Cards
-og_image: /assets/profile.jpeg
-twitter:
-  username: ricardosn8
-  card: summary_large_image
-
 header_pages:
   - experience.html
   - projects.md
-
-# RSS feed settings
-feed:
-  path: feed.xml
 
 # Exclude from processing.
 # The following items will not be processed, by default.
