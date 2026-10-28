@@ -2,6 +2,7 @@
 layout: default
 title: Projects
 permalink: /projects/
+description: "Open source by Ricardo Neves: Lintmatter, Tea and Silo for AI agent workflows (Rust, Python), plus Chillout and Koopera web apps."
 ---
 
 <link rel="stylesheet" href="{{ '/assets/css/experience.css' | relative_url }}">
