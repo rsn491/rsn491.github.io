@@ -83,3 +83,10 @@ header_pages:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+exclude:
+  - cv.latex
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - node_modules/
