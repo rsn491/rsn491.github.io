@@ -1,0 +1,274 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newlength{\resumeTechLabelWidth}
+\newcommand{\resumeTech}[1]{
+  \vspace{2pt}
+  \settowidth{\resumeTechLabelWidth}{\labelitemi}%
+  \item[]\hspace*{-\dimexpr\labelsep+\resumeTechLabelWidth+1pt\relax}\small{\textit{Tech: #1}}\vspace{4pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Ricardo Neves} \\ \vspace{1pt}
+    \small
+    \href{https://rsn491.github.io}{\underline{rsn491.github.io}} $|$
+    \href{https://www.linkedin.com/in/ricardo-neves-61656597}{\underline{linkedin.com/in/ricardo-neves}} $|$
+    \href{https://github.com/rsn491}{\underline{github.com/rsn491}}
+\end{center}
+
+
+%-----------SUMMARY-----------
+\section{Summary}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     Staff Software Engineer with 10+ years of experience building scalable, resilient, and high-performance systems at growing companies and global orgs. At Adyen, I have worked across Payments, Platform Engineering, and Unified Platform, where I now scale the core ledger for transactional and accounting data. Previously, I was the first hire in Klue's Amsterdam office and an early engineer at Defined.ai, helping it grow from 7 to 150 employees in three years.
+    }}
+ \end{itemize}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Staff Software Engineer}{Sep 2021 -- Present}
+      {\href{https://www.adyen.com/}{Adyen}}{}
+      \resumeItemListStart
+        \resumeItem{Led the core ledger's scaling to support \textbf{20--30\% year-over-year growth} and up to \textbf{199k payment transactions per minute} while maintaining \textbf{99.99\% availability}}
+        \resumeItem{Led the ledger platform's re-architecture to support expansion into new availability zones}
+        \resumeItem{Led a DevEx program to speed up delivery and reduce the core accounting group's change failure rate}
+        \resumeItem{Helped establish AI engineering practices through org-wide knowledge sharing and contributions to tooling}
+        \resumeItem{Led database capacity planning through stress testing and performance analysis, and designed application, database, and network experiments for new data-center rollouts}
+        \resumeItem{Established a new 24/7 on-call rotation for Unified Platform and mentored its engineers}
+        \resumeItem{Built tooling to simplify the migration of legacy queue-like workloads, later adopted by other teams}
+        \resumeItem{Led work on the internal database framework to enable real-time connection tuning and improve observability}
+        \resumeItem{Improved the resilience of the distributed locking framework by adding liveness checks}
+        \resumeItem{Shared expertise across the org through talks and writing on topics ranging from SLOs to Postgres query tuning}
+        \resumeTech{Java, Postgres, MyBatis, HikariCP, Prometheus, ELK, Nomad}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer}{Apr 2020 -- Sep 2021}
+      {\href{https://www.adyen.com/}{Adyen}}{}
+      \resumeItemListStart
+        \resumeItem{Led the development of a multi-region, real-time platform for in-person payments and fleet management, scaling it from thousands to \textbf{100k+ devices} while maintaining low latency and high availability}
+        \resumeItem{Designed a stress-test suite to identify scaling bottlenecks and support capacity planning for projected growth}
+        \resumeItem{Improved monitoring and alerting using black-box checks and internal telemetry}
+        \resumeItem{Led the creation of a new environment to accelerate firmware integration and compliance certification}
+        \resumeTech{Java, Postgres, MyBatis, Tomcat, ELK}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer}{Aug 2019 -- Apr 2020}
+      {\href{https://www.klue.com/}{Klue}}{}
+      \resumeItemListStart
+        \resumeItem{Helped establish Klue's first overseas office with an early employee and participated in hiring from day one}
+        \resumeItem{Set up Google Cloud infrastructure for Python services, including CI/CD, load balancers, TLS, and Kubernetes}
+        \resumeItem{Upgraded Elasticsearch by refactoring the application and migrating production data}
+        \resumeItem{Improved application security and resiliency with rate limiting, user permissions, and subresource integrity}
+        \resumeItem{Built a nearest-neighbor deduplication pipeline processing \textbf{1M+ articles and reviews per day}}
+        \resumeTech{Python, Ruby, Flask, Rails, Elasticsearch, Redis, Docker, Kubernetes}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Lead Software Engineer}{Jan 2019 -- Jul 2019}
+      {\href{https://defined.ai/}{Defined.ai}}{}
+      \resumeItemListStart
+        \resumeItem{Led engineering for Data Infrastructure and Machine Learning}
+        \resumeItem{Managed the quarterly roadmap, headcount planning, and hiring}
+        \resumeItem{Architected the first real-time and batch quality-assessment pipelines handling \textbf{1M+ crowdsourcing tasks per day}}
+        \resumeItem{Built frameworks to accelerate machine learning development and deployment}
+        \resumeItem{Set up infrastructure and provided tools for exploratory research, business analysis, and reporting}
+        \resumeTech{Python, C\#, Azure Service Bus, Redis, Cosmos DB, Hive, Spark, Azure Data Lake}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer}{Sep 2016 -- Dec 2018}
+      {\href{https://defined.ai/}{Defined.ai}}{}
+      \resumeItemListStart
+        \resumeItem{Built an enterprise SaaS catalog and pricing backend}
+        \resumeItem{Built a text translation backend and reusable frontend components}
+        \resumeItem{Added support for new crowdsourcing tasks used in 56+ countries, including localization}
+        \resumeItem{Shipped iOS and Android audio collection apps with offline support}
+        \resumeItem{Set up CI/CD and infrastructure for machine learning APIs}
+        \resumeTech{C\#, ASP.NET, SQL Server, React, Redux, Swift, Java, React Native, TensorFlow, Docker, Kubernetes}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Consultant}{Oct 2015 -- Aug 2016}
+      {\href{https://www.nttdata.com/global/en/}{NTT Data} (previously Everis)}{}
+      \resumeItemListStart
+        \resumeItem{Improved the daily financial reporting pipeline for a capital markets platform from hours to seconds}
+        \resumeItem{Expanded integration between client systems and a centralized identity and access management solution using Active Directory}
+        \resumeTech{Java, MySQL, JBoss, Active Directory, CA Identity Suite}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {FCT Research Scholarship}{Jan 2015 -- Sep 2015}
+      {\href{https://www.inesc-id.pt/}{INESC-ID}}{}
+      \resumeItemListStart
+        \resumeItem{Researched energy-efficient transactional memory using machine-learning-guided self-tuning for the \href{https://www.dpss.inesc-id.pt/~salaa/green-tm/}{Green-TM project}}
+        \resumeTech{C, C++, Java, Weka}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\href{https://github.com/rsn491/lintmatter}{\textbf{Lintmatter}} $|$ \emph{Rust}}{2026}
+          \resumeItemListStart
+            \resumeItem{A linter for agentic context}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\href{https://github.com/rsn491/tea}{\textbf{Tea}} $|$ \emph{Python, Docker}}{2026}
+          \resumeItemListStart
+            \resumeItem{Testing and evaluation framework for agentic workflows}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\href{https://github.com/rsn491/silo}{\textbf{Silo}} $|$ \emph{Rust, Ratatui}}{2026}
+          \resumeItemListStart
+            \resumeItem{Isolated workspace manager for parallel agentic development}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\href{https://github.com/rsn491/chillout}{\textbf{Chillout}} $|$ \emph{Vue.js, Node.js, PeerJS}}{2020}
+          \resumeItemListStart
+            \resumeItem{Peer-to-peer video chat app to hangout with friends}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\href{https://github.com/rsn491/koopera}{\textbf{Koopera}} $|$ \emph{Python, Flask, Vue.js}}{2019}
+          \resumeItemListStart
+            \resumeItem{Collaboration app for sharing and reviewing Jupyter notebooks}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Instituto Superior T\'ecnico, Lisbon, Portugal}{2013 -- 2015}
+      {M.Sc. in Software Engineering and Distributed Systems}{}
+  \resumeSubHeadingListEnd
+
+
+%-----------PUBLICATIONS-----------
+\section{Publications}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+        {\href{https://dl.acm.org/doi/10.1145/2980024.2872385}{\textbf{ProteusTM: Abstraction Meets Performance in Transactional Memory}} $|$ \emph{ASPLOS 2016}}{}
+        \resumeItemListStart
+          \resumeItem{Didona, Diegues, Kermarrec, Guerraoui, Neves, Romano}
+        \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
