@@ -1,4 +1,4 @@
-.post-title { display: none; }
+.post-title { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 
 :root {
   --timeline-line-color: #ddd;
@@ -68,9 +68,12 @@
 }
 
 
-.cv-title {
+.post-content h2.cv-title,
+.post-content h2.cv-project-title {
+  margin: 0;
   font-weight: 700;
   font-size: 1rem;
+  line-height: inherit;
   color: #111;
 }
 
