@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Projects
 permalink: /projects/
 description: "Open source by Ricardo Neves: Lintmatter, Tea and Silo for AI agent workflows (Rust, Python), plus Chillout and Koopera web apps."
@@ -13,7 +13,7 @@ description: "Open source by Ricardo Neves: Lintmatter, Tea and Silo for AI agen
     <img src="https://github.com/rsn491/lintmatter/raw/main/docs/img/scorecard.gif" alt="Lintmatter demo" style="width: 260px; flex-shrink: 0; border-radius: 4px; border: 1px solid #e8e8e8;">
     <div style="flex: 1; min-width: 200px;">
       <div style="display: flex; justify-content: space-between; align-items: baseline;">
-        <b>Lintmatter</b>
+        <h2 class="cv-project-title">Lintmatter</h2>
         <span style="color: #828282; font-size: 0.85em;">2026</span>
       </div>
       <p style="margin: 8px 0 12px; font-size: 0.95em;">Linter for agent context files such as AGENTS.md and SKILL.md. Validates formatting, references, and token budgets.</p>
@@ -31,7 +31,7 @@ description: "Open source by Ricardo Neves: Lintmatter, Tea and Silo for AI agen
     <img src="https://github.com/rsn491/tea/raw/main/docs/demo_output.png" alt="Tea demo output" style="width: 260px; flex-shrink: 0; border-radius: 4px; border: 1px solid #e8e8e8;">
     <div style="flex: 1; min-width: 200px;">
       <div style="display: flex; justify-content: space-between; align-items: baseline;">
-        <b>Tea</b>
+        <h2 class="cv-project-title">Tea</h2>
         <span style="color: #828282; font-size: 0.85em;">2026</span>
       </div>
       <p style="margin: 8px 0 12px; font-size: 0.95em;">Testing and evaluation tool for agentic workflows. Run agents against tasks, assert their behavior, and measure performance.</p>
@@ -47,7 +47,7 @@ description: "Open source by Ricardo Neves: Lintmatter, Tea and Silo for AI agen
     <img src="https://github.com/rsn491/silo/raw/main/docs/silo_launch.gif" alt="Silo demo" style="width: 260px; flex-shrink: 0; border-radius: 4px; border: 1px solid #e8e8e8;">
     <div style="flex: 1; min-width: 200px;">
       <div style="display: flex; justify-content: space-between; align-items: baseline;">
-        <b>Silo</b>
+        <h2 class="cv-project-title">Silo</h2>
         <span style="color: #828282; font-size: 0.85em;">2026</span>
       </div>
       <p style="margin: 8px 0 12px; font-size: 0.95em;">Isolated workspace manager for parallel agentic development. Run multiple AI agents on the same repo, each in their own Git worktree.</p>
@@ -65,7 +65,7 @@ description: "Open source by Ricardo Neves: Lintmatter, Tea and Silo for AI agen
     </div>
     <div style="flex: 1; min-width: 200px;">
       <div style="display: flex; justify-content: space-between; align-items: baseline;">
-        <b>Chillout</b>
+        <h2 class="cv-project-title">Chillout</h2>
         <span style="color: #828282; font-size: 0.85em;">2020</span>
       </div>
       <p style="margin: 8px 0 12px; font-size: 0.95em;">P2P video chat app for hanging out with friends. Includes trivia games and YouTube sharing with no central server dependency.</p>
@@ -87,7 +87,7 @@ description: "Open source by Ricardo Neves: Lintmatter, Tea and Silo for AI agen
     </div>
     <div style="flex: 1; min-width: 200px;">
       <div style="display: flex; justify-content: space-between; align-items: baseline;">
-        <b>Koopera</b>
+        <h2 class="cv-project-title">Koopera</h2>
         <span style="color: #828282; font-size: 0.85em;">2019</span>
       </div>
       <p style="margin: 8px 0 12px; font-size: 0.95em;">Collaboration platform for data science teams to share and review Jupyter notebooks. Supports diffs and cell-level comments.</p>
