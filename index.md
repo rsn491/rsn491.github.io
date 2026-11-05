@@ -18,4 +18,6 @@ description: "Ricardo Neves is a Staff Software Engineer at Adyen scaling a paym
 <p>Previously, I was Klue’s <strong>1st hire</strong> in Amsterdam, where I helped establish their Machine Learning office alongside an early employee. </p>
 
 <p>Earlier, I joined Defined.ai as one of their first engineers, supporting its growth from <strong>7 to 150 employees</strong> over 3 years.</p>
+
+<p>See my full <a href="/experience/">experience</a> or browse my <a href="/projects/">open source projects</a>.</p>
 </div>
