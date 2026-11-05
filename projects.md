@@ -5,12 +5,12 @@ permalink: /projects/
 description: "Open source by Ricardo Neves: Lintmatter, Tea and Silo for AI agent workflows (Rust, Python), plus Chillout and Koopera web apps."
 ---
 
-<div style="display: flex; flex-direction: column; gap: 20px;">
+<div class="project-list">
 
-  <div style="display: flex; flex-wrap: wrap; gap: 24px; border: 1px solid #e8e8e8; border-radius: 6px; padding: 20px; align-items: flex-start;">
-    <img src="/assets/projects/lintmatter.gif" width="520" height="247" loading="lazy" alt="Lintmatter demo" style="width: 260px; height: auto; flex-shrink: 0; border-radius: 4px; border: 1px solid #e8e8e8;">
-    <div style="flex: 1; min-width: 200px;">
-      <div style="display: flex; justify-content: space-between; align-items: baseline;">
+  <div class="project-card">
+    <img src="/assets/projects/lintmatter.gif" width="520" height="247" loading="lazy" alt="Lintmatter demo" class="project-thumb">
+    <div class="project-body">
+      <div class="project-head">
         <h2 class="cv-project-title">Lintmatter</h2>
         <span style="color: #828282; font-size: 0.85em;">2026</span>
       </div>
@@ -25,10 +25,10 @@ description: "Open source by Ricardo Neves: Lintmatter, Tea and Silo for AI agen
     </div>
   </div>
 
-  <div style="display: flex; flex-wrap: wrap; gap: 24px; border: 1px solid #e8e8e8; border-radius: 6px; padding: 20px; align-items: flex-start;">
-    <img src="/assets/projects/tea.png" width="520" height="305" loading="lazy" alt="Tea demo output" style="width: 260px; height: auto; flex-shrink: 0; border-radius: 4px; border: 1px solid #e8e8e8;">
-    <div style="flex: 1; min-width: 200px;">
-      <div style="display: flex; justify-content: space-between; align-items: baseline;">
+  <div class="project-card">
+    <img src="/assets/projects/tea.png" width="520" height="305" loading="lazy" alt="Tea demo output" class="project-thumb">
+    <div class="project-body">
+      <div class="project-head">
         <h2 class="cv-project-title">Tea</h2>
         <span style="color: #828282; font-size: 0.85em;">2026</span>
       </div>
@@ -41,10 +41,10 @@ description: "Open source by Ricardo Neves: Lintmatter, Tea and Silo for AI agen
     </div>
   </div>
 
-  <div style="display: flex; flex-wrap: wrap; gap: 24px; border: 1px solid #e8e8e8; border-radius: 6px; padding: 20px; align-items: flex-start;">
-    <img src="/assets/projects/silo.gif" width="520" height="388" loading="lazy" alt="Silo demo" style="width: 260px; height: auto; flex-shrink: 0; border-radius: 4px; border: 1px solid #e8e8e8;">
-    <div style="flex: 1; min-width: 200px;">
-      <div style="display: flex; justify-content: space-between; align-items: baseline;">
+  <div class="project-card">
+    <img src="/assets/projects/silo.gif" width="520" height="388" loading="lazy" alt="Silo demo" class="project-thumb">
+    <div class="project-body">
+      <div class="project-head">
         <h2 class="cv-project-title">Silo</h2>
         <span style="color: #828282; font-size: 0.85em;">2026</span>
       </div>
@@ -57,12 +57,12 @@ description: "Open source by Ricardo Neves: Lintmatter, Tea and Silo for AI agen
     </div>
   </div>
 
-  <div style="display: flex; flex-wrap: wrap; gap: 24px; border: 1px solid #e8e8e8; border-radius: 6px; padding: 20px; align-items: flex-start;">
-    <div style="width: 260px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; background: #f9f9f9; border-radius: 4px; border: 1px solid #e8e8e8; min-height: 120px;">
+  <div class="project-card">
+    <div class="project-logo">
       <img src="/assets/projects/chillout.png" width="80" height="80" loading="lazy" alt="Chillout logo" style="width: 80px; height: auto;">
     </div>
-    <div style="flex: 1; min-width: 200px;">
-      <div style="display: flex; justify-content: space-between; align-items: baseline;">
+    <div class="project-body">
+      <div class="project-head">
         <h2 class="cv-project-title">Chillout</h2>
         <span style="color: #828282; font-size: 0.85em;">2020</span>
       </div>
@@ -79,12 +79,12 @@ description: "Open source by Ricardo Neves: Lintmatter, Tea and Silo for AI agen
     </div>
   </div>
 
-  <div style="display: flex; flex-wrap: wrap; gap: 24px; border: 1px solid #e8e8e8; border-radius: 6px; padding: 20px; align-items: flex-start;">
-    <div style="width: 260px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; background: #f9f9f9; border-radius: 4px; border: 1px solid #e8e8e8; min-height: 120px;">
+  <div class="project-card">
+    <div class="project-logo">
       <img src="/assets/projects/koopera.png" width="80" height="80" loading="lazy" alt="Koopera logo" style="width: 80px; height: auto;">
     </div>
-    <div style="flex: 1; min-width: 200px;">
-      <div style="display: flex; justify-content: space-between; align-items: baseline;">
+    <div class="project-body">
+      <div class="project-head">
         <h2 class="cv-project-title">Koopera</h2>
         <span style="color: #828282; font-size: 0.85em;">2019</span>
       </div>
