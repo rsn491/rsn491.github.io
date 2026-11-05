@@ -68,8 +68,8 @@
 }
 
 
-.cv-title,
-.cv-project-title {
+.post-content h2.cv-title,
+.post-content h2.cv-project-title {
   margin: 0;
   font-weight: 700;
   font-size: 1rem;
