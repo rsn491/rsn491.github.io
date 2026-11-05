@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Ricardo Neves - Staff Software Engineer
+title: Staff Software Engineer
 description: "Ricardo Neves is a Staff Software Engineer at Adyen scaling a payment ledger that handles up to 199k transactions per minute. 10 years in distributed systems."
 ---
 
@@ -9,7 +9,7 @@ description: "Ricardo Neves is a Staff Software Engineer at Adyen scaling a paym
 </style>
 
 <div style="overflow: hidden;">
-  <img src="/assets/profile.jpeg" alt="Profile Picture" style="border-radius: 50%; width: 33%; object-fit: cover; margin-right: 33px; margin-bottom: 16px; float: left;">
+  <img src="/assets/profile.jpeg" alt="Ricardo Neves, Staff Software Engineer" width="383" height="383" style="border-radius: 50%; width: 33%; height: auto; object-fit: cover; margin-right: 33px; margin-bottom: 16px; float: left;">
 
 <p>Staff Software Engineer with 10+ years of experience building scalable, resilient, and high-performance systems in both high-growth and global-scale environments.</p>
 
