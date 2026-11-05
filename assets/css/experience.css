@@ -147,3 +147,22 @@
     left: -29px;
   }
 }
+
+/* Projects */
+.project-list { display: flex; flex-direction: column; gap: 20px; }
+.project-card { display: flex; flex-wrap: wrap; gap: 24px; border: 1px solid #e8e8e8; border-radius: 6px; padding: 20px; align-items: flex-start; }
+.project-thumb { width: 260px; height: auto; flex-shrink: 0; border-radius: 4px; border: 1px solid #e8e8e8; }
+.project-logo { width: 260px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; background: #f9f9f9; border-radius: 4px; border: 1px solid #e8e8e8; min-height: 120px; }
+.project-logo img { width: 80px; height: auto; }
+.project-body { flex: 1; min-width: 200px; }
+.project-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+
+@media (max-width: 600px) {
+  .project-card { padding: 14px; gap: 14px; }
+  .project-thumb, .project-logo { width: 100%; box-sizing: border-box; }
+  .project-body { min-width: 0; flex-basis: 100%; }
+  .cv-description { font-size: 0.92rem; line-height: 1.6; }
+  .cv-entry { margin-bottom: 2rem; }
+  .cv-entry-header { gap: 0.4rem; }
+  .cv-badge { white-space: normal; }
+}
