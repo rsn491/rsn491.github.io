@@ -5,8 +5,6 @@ permalink: /projects/
 description: "Open source by Ricardo Neves: Lintmatter, Tea and Silo for AI agent workflows (Rust, Python), plus Chillout and Koopera web apps."
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/experience.css' | relative_url }}">
-
 <div style="display: flex; flex-direction: column; gap: 20px;">
 
   <div style="display: flex; flex-wrap: wrap; gap: 24px; border: 1px solid #e8e8e8; border-radius: 6px; padding: 20px; align-items: flex-start;">
