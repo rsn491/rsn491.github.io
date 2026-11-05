@@ -48,7 +48,9 @@ defaults:
   - scope:
       path: ""
     values:
-      image: /assets/profile.jpeg
+      image:
+        path: /assets/og-image.png
+        alt: Ricardo Neves, Staff Software Engineer
 social:
   type: Person
   name: Ricardo Neves

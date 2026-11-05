@@ -10,6 +10,25 @@
   {%- if page.url == '/experience/' or page.url == '/projects/' -%}
   <link rel="stylesheet" href="{{ '/assets/css/experience.css' | relative_url }}">
   {%- endif -%}
+  {%- if page.url == '/' -%}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ricardo Neves",
+    "url": "{{ site.url }}/",
+    "image": "{{ site.url }}/assets/profile.jpeg",
+    "jobTitle": "Staff Software Engineer",
+    "worksFor": { "@type": "Organization", "name": "Adyen" },
+    "sameAs": [
+      "https://github.com/rsn491",
+      "https://linkedin.com/in/ricardo-neves-61656597",
+      "https://twitter.com/ricardosn8",
+      "https://medium.com/@rsn491"
+    ]
+  }
+  </script>
+  {%- endif -%}
   {%- feed_meta -%}
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
     {%- include google-analytics.html -%}
