@@ -166,3 +166,25 @@
   .cv-entry-header { gap: 0.4rem; }
   .cv-badge { white-space: normal; }
 }
+
+/* Summary: stats + tech */
+.cv-stats { display: flex; flex-wrap: wrap; gap: 24px; margin: 0 0 32px; padding-bottom: 24px; border-bottom: 1px solid #e8e8e8; }
+.cv-stats div { flex: 1 1 140px; text-align: center; }
+.cv-stats strong { display: block; font-size: 34px; line-height: 1.2; }
+.cv-stats span { font-size: 14px; color: #828282; }
+@media (max-width: 600px) {
+  .cv-stats { gap: 16px; }
+  .cv-stats div { flex-basis: 40%; }
+  .cv-stats strong { font-size: 28px; }
+}
+
+.cv-stage {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.12rem 0.55rem;
+  border-radius: 999px;
+  background: #e8f1fd;
+  color: #1d5fb8;
+  border: 1px solid #b9d3f5;
+  white-space: nowrap;
+}
