@@ -1,10 +1,15 @@
-.post-title { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.post { position: relative; }
+.post-header { margin-bottom: 0; padding-bottom: 16px; border-bottom: 1px solid #e8e8e8; }
+.page-content { padding-top: 24px; }
 
 .cv-download-button {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  margin: 0 0 2rem;
+  position: absolute;
+  top: 4px;
+  right: 0;
+  margin: 0;
   padding: 0.45rem 1rem;
   border: 1px solid var(--node-color);
   border-radius: 999px;
@@ -47,6 +52,7 @@
 /* Timeline */
 .cv-timeline {
   position: relative;
+  margin-top: 32px;
   padding-left: 48px;
 }
 
@@ -198,17 +204,6 @@
   .cv-entry { margin-bottom: 2rem; }
   .cv-entry-header { gap: 0.4rem; }
   .cv-badge { white-space: normal; }
-}
-
-/* Summary: stats + tech */
-.cv-stats { display: flex; flex-wrap: wrap; gap: 24px; margin: 0 0 32px; padding-bottom: 24px; border-bottom: 1px solid #e8e8e8; }
-.cv-stats div { flex: 1 1 140px; text-align: center; }
-.cv-stats strong { display: block; font-size: 34px; line-height: 1.2; }
-.cv-stats span { font-size: 14px; color: #828282; }
-@media (max-width: 600px) {
-  .cv-stats { gap: 16px; }
-  .cv-stats div { flex-basis: 40%; }
-  .cv-stats strong { font-size: 28px; }
 }
 
 .cv-stage {
