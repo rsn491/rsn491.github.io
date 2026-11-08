@@ -10,7 +10,6 @@ description: "Ricardo Neves is a Staff Software Engineer at Adyen scaling a paym
   .home-intro .tech-badges { margin: 0 0 18px; }
   .home-intro .profile-photo { border-radius: 50%; width: 33%; height: auto; object-fit: cover; margin-right: 33px; margin-bottom: 16px; float: left; }
   @media (min-width: 900px) {
-    .wrapper { max-width: 960px; }
     .home-intro { padding: 24px 0 8px; }
     .home-intro .profile-photo { width: 280px; height: 280px; margin-right: 56px; margin-bottom: 24px; box-shadow: 0 8px 24px rgba(0,0,0,.15); }
     .home-intro p { font-size: 18px; line-height: 1.7; margin-bottom: 16px; }
