@@ -1,3 +1,7 @@
+/* Keep the header (and its mobile dropdown menu) above page content such as the
+   absolutely positioned Download CV button and timeline nodes. */
+.site-header { position: relative; z-index: 10; }
+
 .post { position: relative; }
 .post-header { margin-bottom: 0; padding-bottom: 16px; border-bottom: 1px solid #e8e8e8; }
 .page-content { padding-top: 24px; }
