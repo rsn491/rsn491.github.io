@@ -220,3 +220,8 @@
   border: 1px solid #b9d3f5;
   white-space: nowrap;
 }
+
+/* Hover overlay on project GitHub/Demo links (padded via spread shadow so layout doesn't shift). */
+.project-body a { border-radius: 4px; transition: background-color 0.15s, box-shadow 0.15s; }
+.project-body a:hover,
+.project-body a:focus-visible { background-color: rgba(0, 0, 0, 0.06); box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.06); }
