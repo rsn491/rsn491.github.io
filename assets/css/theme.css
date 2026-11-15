@@ -1,0 +1,112 @@
+/* Light/dark theme tokens. The active theme is set on <html data-theme="...">
+   by an inline script in head.html (saved choice, else the OS preference). */
+:root {
+  color-scheme: light;
+  --bg: #fdfdfd;
+  --surface: #f9f9f9;
+  --text: #111;
+  --text-body: #333;
+  --text-muted: #555;
+  --text-subtle: #888;
+  --border: #e8e8e8;
+  --border-strong: #e0e0e0;
+  --link: #2a7ae2;
+  --link-visited: #1756a9;
+  --code-bg: #eef;
+  --timeline-line-color: #ddd;
+  --node-color: #2a7ae2;
+  --node-ring: #fff;
+  --on-accent: #fff;
+  --badge-bg: #eef2f7;
+  --badge-color: #3c5a8a;
+  --badge-border: #c5d0e4;
+  --badge-icon-filter: none;
+  --stage-bg: #e8f1fd;
+  --stage-color: #1d5fb8;
+  --stage-border: #b9d3f5;
+  --hover-overlay: rgba(0, 0, 0, 0.06);
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #15171a;
+  --surface: #1e2125;
+  --text: #e8e9eb;
+  --text-body: #c9ccd1;
+  --text-muted: #a3a8b0;
+  --text-subtle: #8a9099;
+  --border: #2c3036;
+  --border-strong: #363b42;
+  --link: #6ea8f5;
+  --link-visited: #9bbff0;
+  --code-bg: #23272e;
+  --timeline-line-color: #363b42;
+  --node-color: #6ea8f5;
+  --node-ring: #15171a;
+  --on-accent: #0d1117;
+  --badge-bg: #1f2a3a;
+  --badge-color: #a9c4ec;
+  --badge-border: #33465f;
+  /* Recolour the single-colour badge icons (#3c5a8a) to match --badge-color. */
+  --badge-icon-filter: brightness(0) invert(82%) sepia(14%) saturate(900%) hue-rotate(185deg);
+  --stage-bg: #1a2b44;
+  --stage-color: #8fbaf5;
+  --stage-border: #2d4a73;
+  --hover-overlay: rgba(255, 255, 255, 0.08);
+}
+
+/* Minima 2.5 compiles its colours into static values, so re-point them at tokens. */
+body { background-color: var(--bg); color: var(--text); }
+a { color: var(--link); }
+a:visited { color: var(--link-visited); }
+a:hover { color: var(--link); }
+.social-media-list a:hover { color: var(--text); }
+blockquote { color: var(--text-subtle); border-left-color: var(--border); }
+pre, code { background-color: var(--code-bg); border-color: var(--border); }
+hr { border-color: var(--border); }
+table { color: var(--text-body); border-color: var(--border); }
+table th { background-color: var(--surface); border-color: var(--border); }
+table td { border-color: var(--border); }
+table tr:nth-child(even) { background-color: var(--surface); }
+
+.site-header { border-top: 0; border-bottom-color: var(--border); background-color: var(--bg); }
+.site-title, .site-title:visited { color: var(--text); }
+.site-nav .page-link { color: var(--text); }
+.site-nav .menu-icon > svg path { fill: var(--text-muted); }
+.site-footer { border-top-color: var(--border); }
+.footer-heading, .post-meta, .footer-col-wrapper { color: var(--text-subtle); }
+.svg-icon { fill: var(--text-subtle); }
+.post-header { border-bottom-color: var(--border); }
+
+@media screen and (max-width: 600px) {
+  .site-nav { background-color: var(--bg); border-color: var(--border); }
+}
+
+/* Theme toggle */
+.theme-toggle {
+  float: right;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  margin: 12px 0 0 20px;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s;
+}
+.theme-toggle:hover, .theme-toggle:focus-visible { color: var(--link); border-color: var(--link); }
+.theme-icon { fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.theme-icon-moon { fill: currentColor; stroke: none; }
+.theme-icon-sun { display: none; }
+:root[data-theme="dark"] .theme-icon-sun { display: block; }
+:root[data-theme="dark"] .theme-icon-moon { display: none; }
+
+@media screen and (max-width: 600px) {
+  /* Mobile nav is absolutely positioned at the top right; sit just left of it. */
+  .theme-toggle { margin: 12px 56px 0 0; }
+}

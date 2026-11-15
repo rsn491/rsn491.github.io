@@ -1,5 +1,5 @@
 .post { position: relative; }
-.post-header { margin-bottom: 0; padding-bottom: 16px; border-bottom: 1px solid #e8e8e8; }
+.post-header { margin-bottom: 0; padding-bottom: 16px; border-bottom: 1px solid var(--border); }
 .page-content { padding-top: 24px; }
 
 .cv-download-button {
@@ -34,18 +34,14 @@
 .cv-download-button:hover,
 .cv-download-button:focus-visible {
   background: var(--node-color);
-  color: #fff;
+  color: var(--on-accent);
   text-decoration: none;
 }
 
 :root {
-  --timeline-line-color: #ddd;
-  --node-color: #2a7ae2;
+  /* Colour tokens live in theme.css (light + dark). */
   --node-size: 14px;
   --entry-gap: 2.5rem;
-  --badge-bg: #eef2f7;
-  --badge-color: #3c5a8a;
-  --badge-border: #c5d0e4;
 }
 
 
@@ -82,7 +78,7 @@
   height: var(--node-size);
   background: var(--node-color);
   border-radius: 50%;
-  border: 3px solid #fff;
+  border: 3px solid var(--node-ring);
   box-shadow: 0 0 0 2px var(--node-color);
   z-index: 1;
 }
@@ -103,7 +99,7 @@
   object-fit: contain;
   flex-shrink: 0;
   background: #fff;
-  border: 1px solid #e0e0e0;
+  border: 1px solid var(--border-strong);
 }
 
 
@@ -113,18 +109,18 @@
   font-weight: 700;
   font-size: 1rem;
   line-height: inherit;
-  color: #111;
+  color: var(--text);
 }
 
 .cv-company {
   font-size: 0.95rem;
-  color: #555;
+  color: var(--text-muted);
 }
 
 /* Dates */
 .cv-dates {
   font-size: 0.82rem;
-  color: #888;
+  color: var(--text-subtle);
   margin-bottom: 0.55rem;
 }
 
@@ -137,7 +133,7 @@
 .cv-description {
   font-size: 0.94rem;
   line-height: 1.65;
-  color: #333;
+  color: var(--text-body);
   margin: 0 0 0.75rem 0;
 }
 
@@ -167,6 +163,7 @@
   width: 12px;
   height: 12px;
   flex-shrink: 0;
+  filter: var(--badge-icon-filter);
 }
 
 .cv-badge-icon-filtered {
@@ -189,9 +186,9 @@
 
 /* Projects */
 .project-list { display: flex; flex-direction: column; gap: 20px; }
-.project-card { display: flex; flex-wrap: wrap; gap: 24px; border: 1px solid #e8e8e8; border-radius: 6px; padding: 20px; align-items: flex-start; }
-.project-thumb { width: 260px; height: auto; flex-shrink: 0; border-radius: 4px; border: 1px solid #e8e8e8; }
-.project-logo { width: 260px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; background: #f9f9f9; border-radius: 4px; border: 1px solid #e8e8e8; min-height: 120px; }
+.project-card { display: flex; flex-wrap: wrap; gap: 24px; border: 1px solid var(--border); border-radius: 6px; padding: 20px; align-items: flex-start; }
+.project-thumb { width: 260px; height: auto; flex-shrink: 0; border-radius: 4px; border: 1px solid var(--border); }
+.project-logo { width: 260px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; background: var(--surface); border-radius: 4px; border: 1px solid var(--border); min-height: 120px; }
 .project-logo img { width: 80px; height: auto; }
 .project-body { flex: 1; min-width: 200px; }
 .project-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
@@ -211,13 +208,15 @@
   font-weight: 600;
   padding: 0.12rem 0.55rem;
   border-radius: 999px;
-  background: #e8f1fd;
-  color: #1d5fb8;
-  border: 1px solid #b9d3f5;
+  background: var(--stage-bg);
+  color: var(--stage-color);
+  border: 1px solid var(--stage-border);
   white-space: nowrap;
 }
 
 /* Hover overlay on project GitHub/Demo links (padded via spread shadow so layout doesn't shift). */
 .project-body a { border-radius: 4px; transition: background-color 0.15s, box-shadow 0.15s; }
 .project-body a:hover,
-.project-body a:focus-visible { background-color: rgba(0, 0, 0, 0.06); box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.06); }
+.project-body a:focus-visible { background-color: var(--hover-overlay); box-shadow: 0 0 0 4px var(--hover-overlay); }
+
+:root[data-theme="dark"] .cv-badge-icon-filtered { filter: var(--badge-icon-filter); }

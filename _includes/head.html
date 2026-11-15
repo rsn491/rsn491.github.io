@@ -2,12 +2,24 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <script>
+    (function () {
+      var theme = null;
+      try { theme = localStorage.getItem('theme'); } catch (e) {}
+      if (theme !== 'light' && theme !== 'dark') {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
   {%- seo title=false -%}
   <title>{% if page.url == '/' %}{{ page.title | escape }}{% else %}{{ page.title | escape }} | {{ site.title | escape }}{% endif %}</title>
   <link rel="icon" type="image/svg+xml" href="{{ '/assets/favicon.svg' | relative_url }}">
   <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/favicon-32.png' | relative_url }}">
   <link rel="apple-touch-icon" href="{{ '/assets/apple-touch-icon.png' | relative_url }}">
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/theme.css' | relative_url }}">
   {%- if page.url == '/' or page.url == '/experience/' or page.url == '/projects/' -%}
   <link rel="stylesheet" href="{{ '/assets/css/experience.css' | relative_url }}">
   {%- endif -%}
