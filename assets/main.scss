@@ -1,0 +1,14 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minima";
+
+// Keep the header pinned to the top of the viewport while scrolling, and above
+// page content such as the Download CV button and timeline nodes.
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: $background-color;
+}
